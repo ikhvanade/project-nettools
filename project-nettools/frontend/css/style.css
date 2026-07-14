@@ -1,0 +1,35 @@
+/* ==========================================
+   Custom styling tambahan - brutalism soft theme
+   ========================================== */
+
+::selection {
+  background-color: #ffd97d;
+  color: #1a1a1a;
+}
+
+/* Scrollbar kotak, sesuai tema brutalism (bukan rounded default) */
+#cidr-table-wrapper::-webkit-scrollbar {
+  width: 12px;
+}
+#cidr-table-wrapper::-webkit-scrollbar-track {
+  background: #fdf6ec;
+  border-left: 3px solid #1a1a1a;
+}
+#cidr-table-wrapper::-webkit-scrollbar-thumb {
+  background: #b8c4e8;
+  border: 2px solid #1a1a1a;
+}
+
+/* Keyboard focus tetap keliatan jelas (accessibility) */
+input:focus-visible,
+button:focus-visible {
+  outline: 3px solid #1a1a1a;
+  outline-offset: 2px;
+}
+
+/* Reduced motion: matikan transisi buat yang sensitif ke animasi */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

@@ -8,7 +8,7 @@
 //   biarin string kosong "" aja, biar fetch pake relative path.
 // - Kalau backend jalan di port terpisah tanpa reverse proxy (misal domain.com:3001),
 //   ganti jadi "http://domain-atau-ip-server:3001"
-const BACKEND_BASE_URL = "";
+const BACKEND_BASE_URL = "https://api.vannlabs.web.id";
 
 /**
  * Helper umum: fetch ke endpoint backend, handle loading & error state di UI
